@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- To send the data to backend which is available in the URL syntax is mentioned below -->
+
+    <!-- http://127.0.0.1:5500/action-page.js?email=&pwd= In browser this means it send the password and email to the backend -->
+    <form action="/action-page.js" method="post">
+        <!-- <input type="text" name="email" placeholder="Enter your email">
+        <input type="password" name="pwd" placeholder="Enter the password">
+        <input type="submit" value="Login"><br><br>
+
+        Select element syntax below userage contain the below option values only -->
+         <!-- <label>What is your age</label>
+         <select name="userage" size="1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+         </select> -->
+
+         <!-- Text area syntax below this is used to write the bigger description-->
+          <!-- <textarea name="message" rows="10" cols="50"
+          style="width: 100px; height: 100px; max-width: 150px; max-height: 300px;"></textarea>
+          <button type="button" onclick="alert('Hey there')">Don't click</button> -->
+<!-- Fieldset syntax is used below to make the form more attractive Important-->
+          <Fieldset>
+            <legend>Login</legend>
+            <input type="text" name="email" placeholder="Enter your email" list="myname">
+            <datalist id="myname">
+                <option value="name1">
+                <option value="name2">
+                <option value="name3">
+            </datalist>
+            <input type="password" name="pwd" placeholder="Enter the password">
+            <input type="submit" value="Login"><br><br>
+          </Fieldset>
+    </form>
+    
+</body>
+</html>
